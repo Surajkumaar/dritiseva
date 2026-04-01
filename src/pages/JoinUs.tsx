@@ -68,26 +68,26 @@ const JoinUs = () => {
           </div>
 
           {/* Right: photo with floating stat cards */}
-          <div className="lg:w-1/2 relative flex justify-center">
-            {/* Floating stat cards */}
-            <div className="absolute top-0 left-4 flex gap-3 z-10">
-              <div className="bg-white rounded-2xl shadow-md px-4 py-3 text-center min-w-[110px]">
-                <div className="flex justify-center gap-0.5 text-yellow-400 text-sm mb-1">★★★★★</div>
-                <p className="text-2xl font-extrabold text-gray-900">4.8</p>
-                <p className="text-xs text-gray-500">Overall Ratings</p>
+          <div className="lg:w-1/2 relative flex justify-center mt-6 lg:mt-0">
+            {/* Floating stat cards — Stacked or side-by-side on mobile */}
+            <div className="absolute -top-6 left-0 right-0 flex justify-center gap-2 px-4 z-10 sm:left-4 sm:right-auto sm:justify-start sm:gap-3 sm:px-0">
+              <div className="bg-white rounded-xl shadow-md px-3 py-2 text-center min-w-[100px] flex-1 sm:flex-none sm:px-4 sm:py-3 sm:min-w-[110px]">
+                <div className="flex justify-center gap-0.5 text-yellow-400 text-[10px] mb-0.5 sm:text-sm sm:mb-1">★★★★★</div>
+                <p className="text-xl font-extrabold text-gray-900 sm:text-2xl">4.8</p>
+                <p className="text-[10px] text-gray-500 sm:text-xs">Overall Ratings</p>
               </div>
-              <div className="bg-green-50 rounded-2xl shadow-md px-4 py-3 text-center min-w-[110px]">
-                <p className="text-2xl font-extrabold text-gray-900">20,000 +</p>
-                <p className="text-xs text-gray-500">Verified Caregivers</p>
+              <div className="bg-green-50 rounded-xl shadow-md px-3 py-2 text-center min-w-[100px] flex-1 sm:flex-none sm:px-4 sm:py-3 sm:min-w-[110px]">
+                <p className="text-xl font-extrabold text-gray-900 sm:text-2xl">20,000 +</p>
+                <p className="text-[10px] text-gray-500 sm:text-xs">Verified Caregivers</p>
               </div>
             </div>
 
             {/* Caregiver photo card */}
-            <div className="rounded-3xl overflow-hidden mt-16" style={{ backgroundColor: "#dbeafe" }}>
+            <div className="rounded-3xl overflow-hidden mt-12 sm:mt-16" style={{ backgroundColor: "#dbeafe" }}>
               <img
                 src="/caregiver_male.png"
                 alt="Caregiver"
-                className="w-72 h-80 object-cover object-top"
+                className="w-64 h-72 sm:w-72 sm:h-80 object-cover object-top"
               />
             </div>
           </div>

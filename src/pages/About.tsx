@@ -14,39 +14,38 @@ const About = () => {
       {/* ── Hero ─────────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden"
-        style={{ backgroundColor: "#3399e0", minHeight: "400px" }}
+        style={{ backgroundColor: "#3399e0", minHeight: "360px" }}
       >
-        {/* Left elderly illustration — flush to left edge, bottom-anchored */}
+        {/* Left elderly illustration — Smaller on mobile */}
         <img
           src="/elderly_right.png"
-          alt="Elderly man illustration"
-          className="absolute left-0 bottom-0 pointer-events-none select-none"
-          style={{ height: "340px", objectFit: "contain", objectPosition: "bottom left" }}
+          alt="Elderly hero illustration"
+          className="absolute left-0 bottom-0 pointer-events-none select-none h-48 sm:h-[340px]"
+          style={{ objectFit: "contain", objectPosition: "bottom left" }}
         />
 
-        {/* Right elderly illustration — flush to right edge, bottom-anchored */}
+        {/* Right elderly illustration — Smaller on mobile */}
         <img
           src="/elderly_left.png"
-          alt="Elderly woman illustration"
-          className="absolute right-0 bottom-0 pointer-events-none select-none"
-          style={{ height: "340px", objectFit: "contain", objectPosition: "bottom right" }}
+          alt="Elderly hero illustration"
+          className="absolute right-0 bottom-0 pointer-events-none select-none h-48 sm:h-[340px]"
+          style={{ objectFit: "contain", objectPosition: "bottom right" }}
         />
 
         {/* Center content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-8 py-20" style={{ minHeight: "400px" }}>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-20" style={{ minHeight: "360px" }}>
           <p
             className="text-white leading-snug"
             style={{
               fontFamily: "Georgia, 'Times New Roman', serif",
               fontStyle: "italic",
-              fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
+              fontSize: "clamp(1.5rem, 4vw, 2.4rem)",
               maxWidth: "420px",
               lineHeight: 1.45,
             }}
           >
             Building a better<br />world for our elderly<br />loved ones
           </p>
-
         </div>
       </section>
 
