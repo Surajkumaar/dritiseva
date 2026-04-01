@@ -73,7 +73,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/919043943995"
+            href="https://wa.me/91 89396 51621"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-sm text-gray-800 underline mb-3 hover:text-green-600 transition-colors"

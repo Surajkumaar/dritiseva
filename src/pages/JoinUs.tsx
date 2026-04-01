@@ -52,7 +52,7 @@ const JoinUs = () => {
             </div>
             <div className="flex gap-3 flex-wrap">
               <a
-                href="https://wa.me/919043943995"
+                href="https://wa.me/91 89396 51621"
                 target="_blank" rel="noopener noreferrer"
                 className="px-6 py-3 rounded-full bg-green-500 text-white text-sm font-semibold hover:bg-green-600 transition-colors"
               >
@@ -105,7 +105,7 @@ const JoinUs = () => {
               No confusion. No delays. Just fair salary with clear payouts and timely payments every month.
             </p>
             <a
-              href="https://wa.me/919043943995"
+              href="https://wa.me/91 89396 51621"
               target="_blank" rel="noopener noreferrer"
               className="inline-block px-8 py-3 rounded-full bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors"
             >

@@ -13,12 +13,12 @@ interface PriceEntry { amount: number; duration: string; }
 interface CityPricing { hygiene: PriceEntry[]; basic: PriceEntry[]; personal: PriceEntry[]; }
 
 const pricingByCity: Record<string, CityPricing> = {
-  chennai:   { hygiene: [{ amount: 800,  duration: "2 Hours"  }], basic: [{ amount: 1250, duration: "24 Hours" }, { amount: 1500, duration: "24 Hours" }], personal: [{ amount: 1350, duration: "10 Hours" }, { amount: 1600, duration: "24 Hours" }] },
-  bengaluru: { hygiene: [{ amount: 900,  duration: "2 Hours"  }], basic: [{ amount: 1350, duration: "24 Hours" }, { amount: 1600, duration: "24 Hours" }], personal: [{ amount: 1450, duration: "10 Hours" }, { amount: 1750, duration: "24 Hours" }] },
-  hyderabad: { hygiene: [{ amount: 750,  duration: "2 Hours"  }], basic: [{ amount: 1200, duration: "24 Hours" }, { amount: 1450, duration: "24 Hours" }], personal: [{ amount: 1300, duration: "10 Hours" }, { amount: 1550, duration: "24 Hours" }] },
-  mumbai:    { hygiene: [{ amount: 1000, duration: "2 Hours"  }], basic: [{ amount: 1500, duration: "24 Hours" }, { amount: 1800, duration: "24 Hours" }], personal: [{ amount: 1600, duration: "10 Hours" }, { amount: 1900, duration: "24 Hours" }] },
-  delhi:     { hygiene: [{ amount: 850,  duration: "2 Hours"  }], basic: [{ amount: 1300, duration: "24 Hours" }, { amount: 1550, duration: "24 Hours" }], personal: [{ amount: 1400, duration: "10 Hours" }, { amount: 1650, duration: "24 Hours" }] },
-  pune:      { hygiene: [{ amount: 800,  duration: "2 Hours"  }], basic: [{ amount: 1250, duration: "24 Hours" }, { amount: 1500, duration: "24 Hours" }], personal: [{ amount: 1350, duration: "10 Hours" }, { amount: 1600, duration: "24 Hours" }] },
+  chennai: { hygiene: [{ amount: 800, duration: "2 Hours" }], basic: [{ amount: 1250, duration: "24 Hours" }, { amount: 1500, duration: "24 Hours" }], personal: [{ amount: 1350, duration: "10 Hours" }, { amount: 1600, duration: "24 Hours" }] },
+  bengaluru: { hygiene: [{ amount: 900, duration: "2 Hours" }], basic: [{ amount: 1350, duration: "24 Hours" }, { amount: 1600, duration: "24 Hours" }], personal: [{ amount: 1450, duration: "10 Hours" }, { amount: 1750, duration: "24 Hours" }] },
+  hyderabad: { hygiene: [{ amount: 750, duration: "2 Hours" }], basic: [{ amount: 1200, duration: "24 Hours" }, { amount: 1450, duration: "24 Hours" }], personal: [{ amount: 1300, duration: "10 Hours" }, { amount: 1550, duration: "24 Hours" }] },
+  mumbai: { hygiene: [{ amount: 1000, duration: "2 Hours" }], basic: [{ amount: 1500, duration: "24 Hours" }, { amount: 1800, duration: "24 Hours" }], personal: [{ amount: 1600, duration: "10 Hours" }, { amount: 1900, duration: "24 Hours" }] },
+  delhi: { hygiene: [{ amount: 850, duration: "2 Hours" }], basic: [{ amount: 1300, duration: "24 Hours" }, { amount: 1550, duration: "24 Hours" }], personal: [{ amount: 1400, duration: "10 Hours" }, { amount: 1650, duration: "24 Hours" }] },
+  pune: { hygiene: [{ amount: 800, duration: "2 Hours" }], basic: [{ amount: 1250, duration: "24 Hours" }, { amount: 1500, duration: "24 Hours" }], personal: [{ amount: 1350, duration: "10 Hours" }, { amount: 1600, duration: "24 Hours" }] },
 };
 
 // ─── Plan config ──────────────────────────────────────────────────────────────
@@ -43,7 +43,7 @@ const plans: Plan[] = [
     checkColor: "#d946ef",
     iconBg: "#d946ef",
     Icon: ShowerHead,
-    features: ["Toileting Support","Diaper Changing","Bathing Assistance","Personal Grooming","Shaving","Nail Trimming"],
+    features: ["Toileting Support", "Diaper Changing", "Bathing Assistance", "Personal Grooming", "Shaving", "Nail Trimming"],
   },
   {
     key: "basic",
@@ -53,7 +53,7 @@ const plans: Plan[] = [
     checkColor: "#ca8a04",
     iconBg: "#eab308",
     Icon: Users,
-    features: ["Mobility Assistance","Daily Living Assistance","Meal Feeding","Medication Reminder","Elder's Room Housekeeping","Companionship"],
+    features: ["Mobility Assistance", "Daily Living Assistance", "Meal Feeding", "Medication Reminder", "Elder's Room Housekeeping", "Companionship"],
   },
   {
     key: "personal",
@@ -63,7 +63,7 @@ const plans: Plan[] = [
     checkColor: "#16a34a",
     iconBg: "#22c55e",
     Icon: UserCheck,
-    features: ["Personal Hygiene and Grooming","Diaper Changer","Meal Feeding Assistance","Medication Reminder","Toileting Support","Elder's Room Housekeeping","Companionship"],
+    features: ["Personal Hygiene and Grooming", "Diaper Changer", "Meal Feeding Assistance", "Medication Reminder", "Toileting Support", "Elder's Room Housekeeping", "Companionship"],
   },
 ];
 
@@ -148,7 +148,7 @@ const PricingPage = () => {
                   {/* Request Care */}
                   <div className="px-5 pb-5 pt-3">
                     <a
-                      href="https://wa.me/919043943995"
+                      href="https://wa.me/91 89396 51621"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-700 transition-colors"
